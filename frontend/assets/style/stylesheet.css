@@ -1,0 +1,25 @@
+body {
+    background: #f6f3e6;
+}
+
+.container {
+    background: #e1e1e1;
+    max-width: 600px;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.form-group{
+    padding: 10px 10px 0;
+
+}
+

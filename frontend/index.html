@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Order Manegment</title>
+</head>
+
+<body>
+    <div class="container card-group">
+        <div id="newOrderForm">
+            <h1>Naujo produkto užsakymas</h1>
+            <form class="forma">
+                <div class="productSelect"></div>
+                <div class="form-group">
+                    <label>Vardas</label>
+                    <input type="text" name="first_name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Pavardė</label>
+                    <input type="text" name="last_name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Adresas</label>
+                    <input type="text" name="address" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Miestas</label>
+                    <input type="text" name="city" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Pašto kodas</label>
+                    <input type="text" name="post_code" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>El. pašto adresas</label>
+                    <input type="text" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Telefonas</label>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Pristatymo būdas</label>
+                    <select class="form-control" name="shiping_method">
+                        <option value="pickup">Atsiėmimas parduotuvėje</option>
+                        <option value="delivery">Pristatymas į namus</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Pristatymo budas</label>
+                    <select class="form-control" name="payment_method">
+                        <option value="peysera">Elektroninė bankininkystė</option>
+                        <option value="card">Mokėjimas kortele</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-success checkout-button">Pirkti</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>
