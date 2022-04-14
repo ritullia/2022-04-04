@@ -1,25 +1,153 @@
-body {
-    background: #f6f3e6;
+ body {
+    background-image: url("../img/rm222-mind-22_1_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .container {
-    background: #e1e1e1;
-    max-width: 600px;
-    margin-top: 2rem;
-    padding: 2rem;
-    font-size: 15px;
+    display: block;
+    width: auto;
+    align-content: center;
+    margin-top: 5rem;
+    padding: 1rem;
+    font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
+    border: 2px solid #fff;
+    background: #ffffff41;
 }
 
-.forma{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+.mainTitle {
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+ul li{
+    margin-left: 0px;
 
 }
+
 .form-group{
+    width: 640px;
     padding: 10px 10px 0;
-
+    margin: auto;
+    font-size: 16px;   
 }
 
+.productSelect{
+    margin-top: 25px;
+}
+
+.card{
+    width: 180px;
+    height: 240px;
+    border-radius: 15px;
+}
+.card-body{
+    background-color: rgb(255, 255, 255);
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-text{
+    font-size: 15px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px 15px;
+    list-style-type: none;
+}
+.message {
+    display: none;
+}
+
+.message.show {
+    display: block;
+    font-size: 15px;
+    color: #06a77d;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: rgb(12, 120, 120);
+}
+
+#newOrderForm{
+    display: none;
+}
+#newOrderForm.show{
+    display: block;
+}
+
+.actions{
+    width: auto;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.ordersList {
+    padding-top: 2rem;
+}
+
+#newOrderForm .totals {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+    padding: 1rem 0;
+    margin-right: auto;
+}
+
+.originalPrice{
+    padding: 2px;
+    margin-left: 24px;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 900;
+}
+.specialPrice{
+    padding: 2px;
+    margin-left: 2px;
+    color: #ec8805;
+    font-size: 16px;
+    font-weight: 900;
+}
+.normalPrice{
+    padding: 2px;
+    margin-left: 2px;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+table, th, td {
+    border: 1.5px solid #390549;
+    font-size: 16px;
+    font-weight: 800;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #650676;
+    border-color: #390549;
+}
+
+h2{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(65, 15, 125);
+}
+
+
+
+
+
+@media (min-width: 1200) {
+
+    
+}

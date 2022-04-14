@@ -8,8 +8,10 @@ const ordersSchema = new mongoose.Schema({
     post_code: String,
     email: String,
     phone: String,
-    shiping_method: String,
+    shipping_method: String,
     payment_method: String,
+    product: String,
+    total: Number
 })
 
 
