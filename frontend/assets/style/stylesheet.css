@@ -43,8 +43,8 @@ ul li{
 
 .card{
     width: 180px;
-    height: 240px;
-    border-radius: 15px;
+    max-height: 240px;
+    border-radius: 25px;
 }
 .card-body{
     background-color: rgb(255, 255, 255);
@@ -73,10 +73,10 @@ ul{
 .message.show {
     display: block;
     font-size: 15px;
-    color: #06a77d;
+    color: #ffffff;
     text-align: center;
     padding: 10px 10px;
-    background-color: rgb(12, 120, 120);
+    background-color: #e43d0e;
 }
 
 #newOrderForm{

@@ -37,14 +37,20 @@ const validator = (fields) => {
 }
 
 const messageErr = document.querySelector('.message')
-function messages() {
+const messages = () => {
+    // console.log('veikia')
     let input = (document.querySelector('.form-control').value)
-    if (isNaN(input)) {
+    if (input.length === 0) {
         messageErr.innerHTML = 'Please fill all fields'
+        messageErr.classList.remove('alert-success', 'alert-danger')
+        messageErr.classList.add('show')
 
     } else {
         messageErr.innerHTML = ''
     }
+    setTimeout(() => {
+        messageErr.classList.remove('show')
+    }, 8000)
 
 }
 
@@ -86,13 +92,13 @@ const newOrderForm = async () => {
                      <span class="originalPrice">${product.price} €</span>`
 
 
-        html += `<li>
-                <label class="card mb-4">
+        html += `<li class="card mb-4 rounded-3">
+                <label class="card-body">
                     <input type="radio" data-price="${dataPrice}" name="product" value="${product._id}">
                     <div class="contents">
-                            <div class="name card-body card-title">${product.product_name}</div>
-                            <div class="description card-body card-text">${product.description}</div>
-                            <div class="price card-body">${price}</div>
+                            <div class="name card-title">${product.product_name}</div>
+                            <div class="description card-text">${product.description}</div>
+                            <div class="price ">${price}</div>
                     </div>
                  </label>       
                 </li>`
@@ -115,8 +121,10 @@ const newOrderForm = async () => {
                 .then(resp => {
                     console.log(resp)
                 })
+
         }
 
+        messages()
 
     })
 
@@ -126,12 +134,15 @@ const newOrderForm = async () => {
         product.addEventListener('click', () => {
             totalsCalculator()
         })
+
     })
 
     root.querySelector('select[name="shipping_method"]').addEventListener('change', () => {
         totalsCalculator()
 
     })
+
+
 
 }
 
